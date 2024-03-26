@@ -1,5 +1,3 @@
-const buttonOne = document.querySelector(".one");
-const buttonTwo = document.querySelector(".two");
 const contantBtn = document.querySelector('.contantBtn');
 const listTabs = document.querySelector('.tabs')
 
@@ -11,7 +9,6 @@ function getTabId(event){
 
 function controllerButton(event) {
     const tab = event?.newURL.split("#").at(1);
-    console.log(tab);
 }
 
 function switchingTabs (e){
@@ -19,24 +16,23 @@ function switchingTabs (e){
     
     const tab = e.target.dataset.tab;
     if (tab === "tab-1") {
-        window.location.hash = "1";
+        window.location.hash = "one";
         contantBtn.innerHTML = "button ONE";
     }
     if (tab === "tab-2") {
-        window.location.hash = "2";
+        window.location.hash = "two";
         contantBtn.innerHTML = "button TWO";
     }
 }
 
 function urlWithoutHash (){
     const newUrl = history.replaceState(null, null, ' ');
-    contantBtn.innerHTML = "URL without HASH";
     return newUrl;
 }
 
 function init() {
     urlWithoutHash();
-    
+
     window.addEventListener("hashchange", controllerButton);
     listTabs.addEventListener("click", switchingTabs)   
 }
