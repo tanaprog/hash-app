@@ -1,0 +1,20 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 150px auto;
+}
+
+.contantBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; 
+    font-weight: bold;
+    color: rgb(5, 5, 94);
+}
+
+button {
+    font-size: 25px;
+}
