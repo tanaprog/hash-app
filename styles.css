@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin: 150px auto;
+    margin: 150px auto 50px;
 }
 
 .contantBtn {
@@ -17,4 +17,39 @@
 
 button {
     font-size: 25px;
+}
+
+.active {
+    display: block;
+    background-color: yellow;
+    display: block;
+    color: var(--background-color)
+}
+
+.active-img {
+    background-color: aqua;
+}
+
+.hidden_tab_content {
+    display: none;
+}
+
+.tab-main {
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url('/img/clear.png');
+    background-size: cover;
+}
+
+.tab-main2 {
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url('/img/clouds.png');
+    background-size: cover;
 }
