@@ -40,24 +40,24 @@ function switchingTabs(e) {
 
     if (tab === "tab-1") {
         window.location.hash = "clear";
-        changeActiveTabOne("active");
+        // changeActiveTabOne("active");
     }
     if (tab === "tab-2") {
         window.location.hash = "clouds";
-        changeActiveTabTwo("active");
+        // changeActiveTabTwo("active");
     }
 }
 
 function controllerButton() {
     if (location.hash === "#clear") {
         renderClear();
+        changeActiveTabOne("active");
     }
-    false
 
     if (location.hash === "#clouds") {
         renderClouds();
+        changeActiveTabTwo("active");
     }
-    false
 }
 
 function updatePage() {
